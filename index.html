@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Tech Dynamics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            height: 100vh;
+            background: url('a380-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .main-content {
+            padding: 50px 20px;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .main-content h2 {
+            margin-bottom: 1em;
+        }
+        .main-content p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sky Tech Dynamics</h1>
+            <p>Building the World's Largest RC A380</p>
+        </div>
+    </section>
+    <section class="main-content">
+        <h2>About the Project</h2>
+        <p>
+            Welcome to our journey! We're building the world’s largest remote-controlled Airbus A380.
+            Our goal is to push the boundaries of engineering, flight, and fun while sharing every
+            step with you. Stay tuned for updates, videos, and progress logs!
+        </p>
+    </section>
+</body>
+</html>
